@@ -59,7 +59,7 @@ def main():
             gc_count = sum(base.upper() in {"G", "C"} for base in sequence)
             gc_percent = gc_count / len(sequence) * 100
             if args.min_gc is None or gc_percent > args.min_gc:
-                print(f"{header}: {gc_percent:.3f}%")
+                print(f"{header}: {gc_percent:.2f}%")
         if not found_record:
             parser.error("no FASTA records found")
     except (OSError, UnicodeError, ValueError) as error:
