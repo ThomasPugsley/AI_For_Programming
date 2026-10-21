@@ -41,7 +41,7 @@ def main():
         type=float,
         default=None,
         metavar="FLOAT",
-        help="only print records with GC content strictly above this percentage",
+        help="only print records with GC content strictly above this threshold",
     )
     args = parser.parse_args()
 
